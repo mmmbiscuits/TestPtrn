@@ -19,6 +19,7 @@
 		687446E7165C44DE0010152F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687446E6165C44DE0010152F /* ViewController.m */; };
 		687446EA165C44DE0010152F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687446E8165C44DE0010152F /* ViewController_iPhone.xib */; };
 		687446ED165C44DE0010152F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687446EB165C44DE0010152F /* ViewController_iPad.xib */; };
+		687446F8165C48DA0010152F /* TestPatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 687446F7165C48DA0010152F /* TestPatternView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		687446E6165C44DE0010152F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		687446E9165C44DE0010152F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		687446EC165C44DE0010152F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		687446F6165C48DA0010152F /* TestPatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPatternView.h; sourceTree = "<group>"; };
+		687446F7165C48DA0010152F /* TestPatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPatternView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				687446E8165C44DE0010152F /* ViewController_iPhone.xib */,
 				687446EB165C44DE0010152F /* ViewController_iPad.xib */,
 				687446D4165C44DE0010152F /* Supporting Files */,
+				687446F6165C48DA0010152F /* TestPatternView.h */,
+				687446F7165C48DA0010152F /* TestPatternView.m */,
 			);
 			path = TestPtrn;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				687446DA165C44DE0010152F /* main.m in Sources */,
 				687446DE165C44DE0010152F /* AppDelegate.m in Sources */,
 				687446E7165C44DE0010152F /* ViewController.m in Sources */,
+				687446F8165C48DA0010152F /* TestPatternView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

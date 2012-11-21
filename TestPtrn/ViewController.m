@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TestPatternView.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    TestPatternView * testView = [[TestPatternView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    [testView addGestureRecognizer:singleFingerTap];
+    
+    [self.view addSubview:testView];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +33,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    
+    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
+  
+    float  brightness = location.y / recognizer.view.frame.size.height;
+    
+    NSLog(@"%f",brightness);
+    [[UIScreen mainScreen] setBrightness: brightness];
+    
+    NSLog(@"%f, %f",location.y ,location.x);
+    
+    //Do stuff here...
+}
+
+
 
 @end
